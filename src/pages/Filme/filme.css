@@ -1,0 +1,91 @@
+.filmeInfo {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+body {
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-formas-abstratas-brancas_79603-1362.jpg?w=1380&t=st=1686611573~exp=1686612173~hmac=0a4d96486bd38187e2fad718f700c79dee17997b87a7e69161db9e77f729eda0');
+
+}
+
+.filmeInfo h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.filmeInfo img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.filmeInfo h3 {
+    margin: 1rem 0;
+
+    border: 1px solid #116FEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 7px;
+    color: #FFF;
+    background-color: #116FEB;
+    user-select: none;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.filmeInfo .detalheFilme {
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 19px;
+    font-weight: 500;
+}
+
+.filmeInfo strong {
+    width: 12.5rem;
+    border: 1px solid #116FEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 7px;
+    color: #FFF;
+    background-color: #116FEB;
+    user-select: none;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.areaButtons button {
+    margin-right: 1rem;
+    margin-left: 0px;
+    margin-top: 1rem;
+    padding: .8rem;
+    border: 0;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #FFF;
+    background-color: #116FEB;
+    font-weight: bold;
+    transition: all .5s;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.areaButtons a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.areaButtons button:hover {
+    background-color: #043370;
+}

@@ -1,0 +1,40 @@
+.containerErro {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    user-select: none;
+}
+
+.containerErro h2 {
+    color: #FFF;
+    font-size: 8rem;
+    text-align: center;
+}
+
+.containerErro span {
+    color: #FFF;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.containerErro a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 1px solid #FFF;
+    border-radius: 7px;
+    transition: all .5s;
+    font-weight: bold;
+}
+
+.containerErro a:hover {
+    background-color: #FFF;
+    color: #000;
+}
+

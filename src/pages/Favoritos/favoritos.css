@@ -1,0 +1,76 @@
+.filmesFavoritos {
+    max-width: 900px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.filmesFavoritos h1 {
+    margin: 3rem 0;
+    color: #116FEB;
+    font-weight: bolder;
+}
+
+.listaFavoritos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listaFavoritos li {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 1px dashed #116FEB;
+    padding: 1rem;
+    border-radius: 7px;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all .5s;
+}
+
+
+.listaFavoritos li:hover {
+    transform: scale(1.1);
+    background-color: #252525;
+    color: #FFF;
+}
+
+.btn a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: .7rem;
+    background-color: #116FEB;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: .9rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.btn button {
+    padding: .7rem;
+    background-color: red;
+    border: 0;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
