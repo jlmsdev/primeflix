@@ -24,7 +24,8 @@ Antes de executar o projeto, verifique se você tem os seguintes requisitos:
    git clone https://github.com/seu-usuario/nome-do-projeto.git
    ```
 
-2. Acesse a pasta do projeto:
+2. Acesse a pasta do projeto ou acesse o Link do Projeto em Produção 
+  [Prime Flix](https://jlms-flix.netlify.app/):
 
    ```shell
    cd nome-do-projeto
