@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Projeto de Aprendizado em ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi desenvolvido em ReactJS e utiliza requisições HTTP com a biblioteca Axios para consumir a API do TMDB (The Movie Database). O objetivo é exibir os filmes mais recentes em cartaz.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- A página inicial exibe uma lista dos 10 filmes mais recentes em cartaz.
+- Cada filme é exibido com seu título, imagem do pôster e um link para acessar mais informações sobre o filme.
 
-### `npm start`
+## Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Antes de executar o projeto, verifique se você tem os seguintes requisitos:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js instalado (versão 12 ou superior)
+- NPM (Node Package Manager) instalado
 
-### `npm test`
+## Como executar o projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone este repositório em sua máquina:
 
-### `npm run build`
+   ```shell
+   git clone https://github.com/seu-usuario/nome-do-projeto.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Acesse a pasta do projeto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```shell
+   cd nome-do-projeto
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Instale as dependências do projeto:
 
-### `npm run eject`
+   ```shell
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Execute o projeto:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```shell
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. O projeto estará disponível em `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Estrutura do projeto
 
-## Learn More
+A estrutura do projeto é a seguinte:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `src/`
+  - `components/` - Pasta contendo os componentes reutilizáveis.
+    - `Loader.js` - Componente de carregamento exibido enquanto os dados são buscados na API.
+  - `pages/` - Pasta contendo as páginas do projeto.
+    - `Home.js` - Página inicial que exibe a lista de filmes recentes em cartaz.
+  - `services/` - Pasta contendo a configuração da API.
+    - `api.js` - Configuração do Axios para fazer as requisições HTTP.
+  - `App.js` - Componente principal que define as rotas do projeto.
+  - `index.js` - Arquivo de entrada do projeto.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## API do TMDB
 
-### Code Splitting
+Este projeto utiliza a API do TMDB (The Movie Database) para obter os dados dos filmes mais recentes. É necessário possuir uma chave de API para fazer as requisições. A chave de API utilizada neste projeto é `dbb3cfe4abf34e041d60ee088811235f`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Caso você queira utilizar sua própria chave de API, modifique o parâmetro `api_key` na chamada da API em `Home.js`.
 
-### Analyzing the Bundle Size
+```javascript
+const response = await api.get('movie/now_playing', {
+    params: {
+        api_key: 'sua-chave-de-api',
+        language: 'pt-BR',
+        page: 1
+    }
+});
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Certifique-se de substituir `'sua-chave-de-api'` pela sua própria chave.
 
-### Making a Progressive Web App
+## Contribuição
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contribuições são bem-vindas! Caso queira contribuir para este projeto, sinta-se à vontade para abrir um pull request.
 
-### Advanced Configuration
+## Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
