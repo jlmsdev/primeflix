@@ -1,7 +1,5 @@
 # Projeto de Aprendizado em ReactJS
 
-## em breve estará em produção
-
 Este projeto foi desenvolvido em ReactJS e utiliza requisições HTTP com a biblioteca Axios para consumir a API do TMDB (The Movie Database). O objetivo é exibir os filmes mais recentes em cartaz.
 
 ## Funcionalidades
